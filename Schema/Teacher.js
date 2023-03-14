@@ -1,13 +1,14 @@
 const mongoose = require('mongoose');
 
-const Student =new mongoose.Schema({
+const Teacher =new mongoose.Schema({
 Name: {
     type: String,
     required: true,
 },
-Class: {
+Rating: {
     type: Number,
     required: true,
+    default: 0,
 },
 Subject: {
     type: String,
@@ -22,7 +23,7 @@ Mobile: {
         max: 10
     }
 },
-StudentId: {
+TeacherID: {
     type: String,
     length: 5,
 }

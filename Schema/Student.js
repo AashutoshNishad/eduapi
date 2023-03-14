@@ -19,6 +19,11 @@ Mobile: {
 StudentId: {
     type: String,
     length: 5,
+},
+Password: {
+    type: String,
+    required: true,
+    default: "1234567"
 }
 })
 
